@@ -61,7 +61,7 @@ def main():
     # load coco model weights
     rcnn.load_weights('./logs/cockatoo20210609T2039/mask_rcnn_cockatoo_0010.h5', by_name=True)
     # load photograph
-    img = load_img('./dataset/val/images/5v.jpg')
+    img = load_img('./dataset/test/5.jpg')
     img = img_to_array(img)
     # make prediction
     results = rcnn.detect([img], verbose=1)
